@@ -28,7 +28,7 @@ int main() {
             found_prime = 1;
         }
     }
-    if (!found_prime) {
+    if ((found_prime)==0) {
         printf("No prime number exists");
     }
     printf("\n");
