@@ -13,7 +13,7 @@ int check(int arr[], int n, int a) {
 
 void get(int arr[], int n, int unique_arr[], int* unique_count) {
     for (int i = 0; i < n; i++) {
-        if (!check(unique_arr, *unique_count, arr[i])) {
+        if (check(unique_arr, *unique_count, arr[i])== 0) {
             unique_arr[*unique_count] = arr[i];
             (*unique_count)++;
         }
